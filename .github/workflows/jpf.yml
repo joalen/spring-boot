@@ -19,7 +19,7 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Build project with JDK 17 
+    - name: Build project with JDK 17 & Gradle
       run: ./gradlew clean build -x test
 
     - name: Set up JDK 11 for JPF
